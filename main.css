@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --line: hsl(0, 0%, 94%);
+  --txtAnswer: hsl(0, 0%, 56%);
+  --questionHover: hsl(283, 50%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-pink);
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+/* mobile version background image */
+.img-bg-mobile {
+  width: 100%;
+}
+
+/* card container */
+.container-card {
+  background-color: var(--White);
+  position: absolute;
+  border-radius: 9px;
+  padding: 23px;
+  width: 328px;
+  min-height: 420px;
+  margin: 0 auto;
+  top: 143px;
+  right: 0;
+  left: 0;
+}
+
+/* star and title icon container */
+.container-title {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 30px;
+
+  & .img-star {
+    width: 25px;
+    height: 25px;
+  }
+
+  & .title-FAQs {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.container-question {
+  display: flex;
+  gap: 45px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  & .question {
+    font-weight: 600;
+    font-size: 0.895em;
+  }
+
+  & .iconPlus:hover {
+    cursor: pointer;
+  }
+
+  & .question:hover {
+    color: var(--questionHover);
+    cursor: pointer;
+  }
+}
+
+hr {
+  border: 1px solid;
+  color: var(--line);
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+
+.container-answer {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--txtAnswer);
+}
+
+@media screen and (min-width: 376px) {
+  .container-card {
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .container-card {
+    top: 60px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container-card {
+    top: 80px;
+    width: 603px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .container-card {
+    top: 110px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .container-card {
+    top: 135px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container-card {
+    top: 155px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container-card {
+    top: 200px;
+  }
+}
